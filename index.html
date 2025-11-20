@@ -6,6 +6,7 @@
     <title>Thibault Gillet - SomeNews</title>
 
     <!-- lien font -->
+    <link href="https://api.fontshare.com/v2/css?f[]=excon@400&f[]=tanker@400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/app.js" defer></script>
@@ -26,20 +27,77 @@
 <body>
     <nav class="nav">
         <div class="nav__display">
-            <span class="nav__logo"><a href="">Some New News</a></span>
             <ul class="nav__list">
                 <li class="nav__el">Home</li>
                 <li class="nav__el">Archive</li>
                 <li class="nav__el">About</li>
             </ul>
+            <span class="nav__logo"><a href="">Some New News</a></span>
+            
         </div>
     </nav>
 
     <main>
         <header class="header">
             <h1 class="header_title">"Painting Whit The Web" par Matthias Ott</h1>
-            <img class="header__image" src="assets/images/PaintingWithTheWeb_01.jpg" alt="">
+            <img class="header__image image" src="assets/images/PaintingWithTheWeb_01.jpg" alt="Ouverture de la conférence">
+            <figcaption class="header__caption caption">An elephant at sunset</figcaption>
+            <div class="header__credit">
+                <span class="header__case"> bla bla</span>
+                <span class="header__case"> bla bla</span>                
+                <hr class="header__dash">
+            </div>
         </header>
+
+        <div class="content">
+
+            <h2 class="content__title">Beyond What?</h2>
+            <h3 class="content__subTitle">Tellerand ou "bord de l'asiette" en allemand</h3>
+            <p class="content__txt">Beyond Tellerrand est un week-end de conférence qui a lieu deux fois dans l’année; une fois à Düsseldorf et une fois à Berlin. Originalement créé en 2010 par Marc Thiele, la série d’évènements s’est vu grandir pour finalement atteindre les 500 participants chaque fois. Son but? Un lieu où designers, développeurs et autres peuvent se rencontrer et communier. Les sujets sont vastes, ne s’appliquant pas qu’à une seule part du monde du web; chacun y trouve son bonheur. </p>
+
+            <figure class="content__figure content__figure--center">
+            <img  class="content__image image" src="assets/images/beyondtellerrandLogo.svg" alt="Logo Beyond Tellerand">
+            <figcaption class="content__caption caption">© Beyond Tellerand</figcaption>
+            </figure>
+
+            <h2 class="content__title">Do What?</h2>
+            <h3 class="content__subTitle">Painting With The Web</h3>
+            <p class="content__txt">La conférence est présenté par Matthias Ott, dont vous pouvez trouvez se présentation ici. Il débute sa conférence avec l’œuvre de Gerhard Richter dont la réalisation se fait avec intuition et recul, en conversation constante avec le “matériau” (peinture à huile).
+            <figure class="content__figure content__figure--left">
+                <img  class="content__image image content__image--in" src="assets/images/PaintingWithTheWeb_02.jpg" alt="Peinture de Gerhard Richter">
+                <figcaption class="content__caption caption content__caption--in">Peinture de Gerhard Richter.</figcaption>
+            </figure>
+            Pour lui, c’est le processus créatif ultime comprenant réflexion constante, expérimentation et révision. En confrontation avec la conception du web, deux différences sont soulignés. Premièrement, la toile du web est fluide, responsive et couvre plus de 2300 taille de viewport par rapport à la toile fixe traditionnelle. Or, l’industrie s’obstine à “peindre”  au pixel parfait des sites web grâce à des logiciels statiques (Figma, Adobe XD), avec abstraction du dynamique du réel. Deuxièmement, cette conversation avec la matériau se fait à distance (sans code), ce qui rompt la relation et empêche le feedback créatif. Les décisions des designers sont basée sur des hypothèses plutôt que sur la réalité du web</p>
+
+            <figure class="content__figure content__figure--center">
+            <img  class="content__image image" src="assets/images/PaintingWithTheWeb_03.jpg" alt="Types de Viewport">
+            <figcaption class="content__caption caption">Types de Viewport.</figcaption>
+            </figure>    
+
+            <p class="content__txt">Ensuite, la conférence poursuit sur les fondamentaux du web en tant que technologie, indispensable pour comprendre les qualités et contraintes du matériau, et non toile vierge, avec lequel on travail. Le HTML, créé par Tim Berners-Lee, consiste à transmettre la structure significative pour garantir la portabilité tandis que le CSS, introduit par Hakom Wium-Lee, inclut l’influence partagée (non retenue finalement) et l’idée de la cascade; style suggérés par l’auteur mais modifiables par l’utilisateur,  sans prescription. Dans tout cela, le rôle du designer n’est pas de contrôler l’apparence mais de la proposer afin d’assurer l’accessibilité.</p>
+
+            <figure class="content__figure content__figure--center">
+            <img  class="content__image image" src="assets/images/PaintingWithTheWeb_11.png" alt="Static image for components">
+            <figcaption class="content__caption caption">On n'utilise pas tout le potentiel des technologies du web; préférant le static de Figma ou autre.</figcaption>
+            </figure>
+
+            <p class="content__txt">Pour Matthias, le CSS moderne est l’outil de conception le plus puissant, surpassant les outils statiques dans certains domaines clés. Pour la typographie, la fonction clamp() (calcul une taille de police s’adaptant automatiquement au viewport) et l’échelle modulaire (utilisation de ratio de tailles police selon la taille de l’écran) vont permettre une adaptation fluide et un contraste harmonieux.
+            <figure class="content__figure content__figure--rigth">
+                <img  class="content__image image content__image--in" src="assets/images/PaintingWithTheWeb_07.jpg" alt="OKLCH">
+                <figcaption class="content__caption caption content__caption--in">Le système OKLCH est uniformément perceptuel</figcaption>
+            </figure>
+            Concernant la couleur, l’espace colorimétriques sRGB n’étant pas disponible sur tous les outils de conception, l’adoption de l’espace OKLCH en CSS devient important. Celui-ci est uniformément perceptible donnant droit à des palettes accessibles par le contrôle la luminosité (L) qui est rendu dynamique par la syntaxe de couleur relative directement dans le CSS.</p> 
+            
+            <p class="content__txt">Finalement, pour la mise en page, le CSS Grid permet depuis 2017 des “layout” réactifs et complexes (en une seule ligne).  Cela va être complété par le SubGrid qui propose aux éléments imbriqués d’hériter des lignes et colonnes de la grille parente. Et puis, les Container Queries permettent aux éléments de s’ajuster en fonction de la taille (bientôt le style) du conteneur parent, apportant flexibilité. </p>
+
+            <p class="content__txt">En fin de conférence, le conférencier recommande l’adoption de l’Ingénierie de Conception Web qui demande l’intégration plus prématurément du prototypage HTML/CSS/JS. Cela va permettre de percevoir dans le navigateur ce qui fonctionne ; avec par exemple CodePen. Il faut donner la possibilité aux designers de coder tel un architecte qui se soucie du bois de l’acier ou de la physique. En fin de compte la meilleure façon de pratiquer et d’explorer, sans pression, est le site web personnel permettant de maintenir le web ouvert et diversifié.</p>
+
+            <figure class="content__figure content__figure--center">
+            <img  class="content__image image" src="assets/images/PaintingWithTheWeb_08.png" alt="LDC">
+            <figcaption class="content__caption caption">L'importance du codage pour un développeur a longtemps été négligée.</figcaption>
+            </figure>
+
+        </div>
     </main>
 
     <!-- <footer>
