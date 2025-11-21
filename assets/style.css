@@ -30,14 +30,10 @@ body{
    
     /* gradient */    
     background: hsla(222, 10%, 41%, 1);
-
-background: linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
-
-background: -moz-linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
-
-background: -webkit-linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5E6472", endColorstr="#F2EFEA", GradientType=1 );
+    background: linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
+    background: -moz-linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
+    background: -webkit-linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5E6472", endColorstr="#F2EFEA", GradientType=1 );
 
     width: 100%;
     padding: 2% 0; 
@@ -226,6 +222,26 @@ h3{
     margin: auto;
 }
 
+.content__list a{
+    color: black;
+}
+
+.content__list{
+    list-style: none;
+}
+
+.content__el{
+    margin: 1% 0;
+}
+.content__h3{
+    font-size: 25px;
+    font-style: normal;
+    text-align: left;
+    max-width: 55ch;
+
+    margin-bottom: 1%;
+}
+
 /* More */
 .More__case{
     display: inline-flex;
@@ -333,3 +349,4 @@ footer{
     background-color: #C3423F;
     transition: background-color 0.25s ease;
 }
+
