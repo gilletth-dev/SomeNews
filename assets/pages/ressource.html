@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thibault Gillet - SomeNews</title>
+    <title>Some New News - Ressources</title>
 
     <!-- lien font -->
     <link href="https://api.fontshare.com/v2/css?f=excon@400&f=tanker@400&display=swap" rel="stylesheet">
@@ -12,35 +12,49 @@
     <script src="../app.js" defer></script>
 
     <!-- à définir -->
-    <meta name="description" content="Newsletter du mois">
+    <meta name="description" content="Ressources">
     <meta property="og:site_name" content="Thibault  Gillet - SomeNews"> 
     <meta property="og:title" content="SomeNews"> 
-    <meta property="og:description" content="Newsletter du mois"> 
+    <meta property="og:description" content="Ressources"> 
     <meta property="og:type" content="website">
     <meta property="og:url" content="url site">
     <meta property="og:image" content=""> 
     <meta property="og:image:width" content="767">
     <meta property="og:image:height" content="795">
     
-    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link rel="icon" type="image/png" href="../images/icon.png">
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" id="top">
         <div class="nav__display">
             <ul class="nav__list">
-                <li class="nav__el">Home</li>
-                <li class="nav__el">Archive</li>
-                <li class="nav__el">About</li>
+                <li class="nav__el"><a href="#">Acceuil</a></li>
+                <li class="nav__el"><a href="#">Archive</a></li>
+                <li class="nav__el"><a href="#">A Propos</a></li>
             </ul>
-            <span class="nav__logo"><a href="">Ressources</a></span>
+            <span class="nav__logo"><a href="#top">Ressources</a></span>
             
         </div>
     </nav>
 
+    <main>
+        <a class="backToTop" href="#top"><img class="backToTop__img" src="../images/arrow.svg" alt="arrow"></a>
 
+
+        <div class="content">
+            <h2 class="content__title">What helped me</h2>
+                <h3 class="content__subTitle">Lien vers les sites qui m'ont été utiles</h3>
+                    <div class="content__list">
+                        <ul class="content__el">blab</ul>
+                        <ul>blab</ul>
+                    </div>
+              
+        </div>
+    </main>
 
     <footer class="footer">
         <ul class="footer__list">
+            <!-- A definir -->
             <li class="footer__el"><a href="">Ressources</a></li>
             <li class="footer__el"><a href="https://thibaultgillet.be/projets/">Mon site</a></li>
             <li class="footer__el"><a href="https://github.com/gilletth-dev">GitHub</a></li>
