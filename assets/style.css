@@ -8,14 +8,6 @@ body{
     font-size: 20px;
 }
 
- /* 
-    #C3423F
-    #5E6472
-    #210124
-    */
-
-
-
 .dash{
     background-color: black;
     height: 4px;
@@ -33,7 +25,6 @@ body{
     background: linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
     background: -moz-linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
     background: -webkit-linear-gradient(270deg, hsla(222, 10%, 41%, 1) 0%, hsla(38, 24%, 93%, 1) 93%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5E6472", endColorstr="#F2EFEA", GradientType=1 );
 
     width: 100%;
     padding: 2% 0; 
@@ -217,7 +208,6 @@ h3{
 }
 
 .content__figure--center{
-    float: center;
     width: 80%;
     margin: auto;
 }
@@ -294,7 +284,6 @@ footer{
 }
 
 .footer__list{
-    display: column;
     justify-content: center;
     align-items: center;
     list-style: none;
