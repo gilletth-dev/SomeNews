@@ -206,7 +206,7 @@ h3{
 .content__figure--left{
     float: left;
     width: 40%;
-    margin: 1% 1% 1% 0;
+    margin: 1% 2% 1% 0;
 }
 
 .content__figure--rigth{
@@ -248,9 +248,9 @@ h3{
     align-items: center;
     justify-content: center;
 
-    padding:  3% 0;
+    padding:  1% 0;
     height: 50%;
-    width: 35%;
+    width: 25%;
     margin:0 1%;
 
     background: #5E6472;
@@ -286,7 +286,7 @@ footer{
     align-items: center;
     justify-content: center;
     
-    background: #C3423F;
+    background: #5E6472;
     
     width: 100%;
     margin-top: 3%;
@@ -302,6 +302,7 @@ footer{
     color: #F2EFEA;
     font-size: 16px;
     text-align: center;
+    font-weight: 100;
 }
 
 .footer__list a, .footer__el{
@@ -347,6 +348,27 @@ footer{
 
 .backToTop:hover{
     background-color: #C3423F;
-    transition: background-color 0.25s ease;
 }
 
+/* - 600px */
+@media (max-width: 600px) {
+    p, .content__txt{
+        font-size: 18px;
+    }
+
+    .More__case{ 
+        padding:  1% 0;
+        height: auto;
+        width: auto;
+        margin:auto;
+
+        font-size: 16px;
+    }
+
+    .nav__el{
+    
+    height: auto;
+    width: auto;
+    
+    }
+}
